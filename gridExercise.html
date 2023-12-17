@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid exercise</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+
+        }
+
+        .logo img {
+            width: 192px;
+            height: 57px
+        }
+
+        nav {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            margin-top: 18px;
+
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            border: none;
+
+        }
+
+        nav ul li {
+            margin: 7px 7px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 13px 13px;
+            color: #958888;
+            font-size: 1.2rem;
+
+        }
+
+        #hero {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 93px;
+            flex-direction: column;
+
+
+        }
+
+        #hero h1 {
+            font-size: 42px;
+            font-weight: 100;
+            color: #655757;
+
+        }
+
+        .ultra {
+            font-size: 63px;
+            font-weight: 600;
+
+        }
+
+        .hero-p {
+            font-size: 26px;
+            text-align: center;
+            margin-top: 29px;
+            font-family: none;
+            word-spacing: 7px;
+            color: #655757;
+        }
+
+        .hero-btn {
+            background-color: #09a6bd;
+            border-radius: 5px;
+            padding: 3px;
+            height: 57px;
+            width: 295px;
+            color: white;
+            font-size: 19px;
+            font-weight: bolder;
+            border: none;
+            margin-top: 30px;
+
+        }
+
+        #Download {
+
+            width: 71%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 0px;
+            border: 2px solid;
+            justify-items: center;
+            align-items: center;
+            margin-top: 102px;
+            column-gap: 28px;
+            row-gap: 24px;
+            border: none;
+        }
+
+        #Download>div {
+            border: 2px solid;
+    width: 275px;
+    height: 177px;
+    text-align: center;
+    line-height: 33px;
+    background-color: #edecec;
+    background-color: whitesmoke;
+    color: #5d4d4d;
+    border: navajowhite;
+    padding-top: 18px;
+    border-radius: 9px;
+
+        }
+
+        .grid-btn1 {
+    background-color: #09a6bd;
+    border-radius: 6px;
+    width: 127px;
+    height: 42px;
+    border: none;
+    color: wheat;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+        }
+
+        .grid-btn2 {
+            background-color: #5cb85c;
+            
+    border-radius: 6px;
+    width: 127px;
+    height: 42px;
+    border: none;
+    color: wheat;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./images/UE_Logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">products</a></li>
+            <li><a href="#">pricing</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </nav>
+    <section id="hero">
+        <h1>Downlods <span class="ultra">UltraEdits</span> for Windows <span><img src="./images/Reviews.png"
+                    alt=""></span></h1>
+
+        <p class="hero-p">Download and try UltraEdit before you buy it! This download includes the full Windows
+            <br>version of the text editor.
+        </p>
+        <button class="hero-btn">Donload mac or linux version </button>
+    </section>
+    <section id="Download">
+        <div>
+            <h1>English</h1>
+            <h4>American lan</h4>
+            <button class="grid-btn1">
+                Download 32-bit
+            </button>
+
+            <button class="grid-btn2">Download 64-bit</button>
+        </div>
+        <div>
+            <h1>Hindi</h1>
+            <h4>Indain language</h4>
+            <button class="grid-btn1">Download 32-bit</button>
+            <button class="grid-btn2">Download 64-bit</button>
+        </div>
+        <div>
+            <h1>Duch</h1>
+            <h4>Duch language</h4>
+            <button class="grid-btn1">Download 32-bit</button>
+            <button class="grid-btn2">Download 64-bit</button>
+        </div>
+        <div>
+            <h1>
+                Marati
+            </h1>
+            <h4>marati</h4>
+            <button class="grid-btn1">Download 32-bit</button>
+            <button class="grid-btn2">Download 64-bit</button>
+        </div>
+        <div>
+            <h1>
+                Português brasileiro
+            </h1>
+            <h4>Brazilian Portuguese</h4>
+            <button class="grid-btn1">Download 32-bit</button>
+
+            <button class="grid-btn2">Download 64-bit</button>
+        </div>
+        <div>
+            <h1>
+                Español
+            </h1>
+            <h4>Spanish</h4>
+            <button class="grid-btn1">Download 32-bit</button>
+
+            <button class="grid-btn2">Download 64-bit</button>
+        </div>
+    </section>
+</body>
+
+</html>
